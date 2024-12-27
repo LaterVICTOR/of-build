@@ -11,8 +11,6 @@ class Index {
             config: {
                 generateUpdatesFilesForAllChannels: false,
                 appId: preductname,
-                productName: preductname,
-                copyright: 'Copyright © 2022-2024 LaterVICTOR',
                 artifactName: "${productName}-${os}-${arch}.${ext}",
                 files: ["src/**/*", "package.json","LICENSE"],
                 directories: { "output": "dist" },

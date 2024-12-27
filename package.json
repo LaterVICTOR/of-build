@@ -23,6 +23,8 @@
         "axios": "^1.7.7",
         "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
+        "fs": "^0.0.1-security",
+        "Jimp": "npm:jimp@^0.22.12",
         "minecraft-java-core": "^3.11.3",
         "node-bdd": "^2.0.4",
         "node-fetch": "^2.7.0",

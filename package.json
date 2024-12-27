@@ -1,7 +1,7 @@
 {
     "name": "SoulStudio",
     "preductname": "SoulStudio",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "description": "SoulStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR and Drolet",
@@ -41,6 +41,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/u3784653u23847s/awd.git"
+        "url": "git+https://github.com/LaterVICTOR/of-build.git"
     }
 }

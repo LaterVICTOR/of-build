@@ -1,7 +1,7 @@
 {
     "name": "SoulStudio",
     "preductname": "SoulStudio",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "SoulStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR and Drolet",

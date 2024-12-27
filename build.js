@@ -22,7 +22,11 @@ class Index {
                     channel: "latest",
                     publishAutoUpdate: true,
                     useMultipleRangeRequest: true,
-                }],
+                },
+                {
+                provider: "github",
+                releaseType: 'release',
+            }],
                 win: {
                     icon: "./src/assets/images/icon.ico",
                     target: [{

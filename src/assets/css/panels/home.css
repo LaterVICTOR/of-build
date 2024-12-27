@@ -1,0 +1,489 @@
+::-webkit-scrollbar {
+    display: none; /* Para ocultar completamente */
+}
+.tooltip {
+  position: absolute;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: #ffffff13;
+  color: #fff;
+  text-align: center;
+  padding: 1px 0;
+  border-radius: 5px;
+  position: absolutte;
+  z-index: 1;
+  bottom: 125%;
+  left: 85%;
+  margin-left: -47px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0px 0px 5px #fdfdfd60;
+  font: normal normal normal 16px/25px Poppins;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0px 0px 5px #fdfdfd60;
+
+}
+@keyframes colorful {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  } 
+  body .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 50px;
+
+  }
+  body .container .card {
+    position: relative;
+    top: 10px;
+    width: 44px;
+    height: 44px;
+    margin: 0.5em;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgb(255, 255, 255);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  }
+  body .container .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  body .container .card .content .img {
+    position: relative;
+    top: -12px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  body .container .card .content .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  body .container .card .sci {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+
+  body .container .card:hover .content {
+    opacity: 1;
+} 
+/* ARRIBA NO TOCAR*/
+
+.bottom-bar-home {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 78;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #ffffff00;
+    display: flex;
+}
+.disabled-option {
+    color: #fcfcfc; /* Cambia el color de texto para opciones deshabilitadas */
+    background-color: #e2141ed3; /* Cambia el color de fondo para opciones deshabilitadas si es necesario */
+    border-radius: 5px;
+}
+
+.play-element {
+    display: none;
+    top: null;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    color: #F1F1F1;
+    font: normal normal bold 19px/29px Poppins;
+    text-align: center;
+}
+
+.settings-btn {
+    visibility: none;
+    position: absolute;
+    top: 15px;
+    width: 54px;
+    height: 51px;
+    left: 94%;
+    border: currentColor;
+    font: normal normal bold 50px/50px Poppins;
+    border-radius: 16px;
+    box-shadow: 0 0 5px #F1F1F1;
+    color: #F1F1F1;
+    background: #00000096;
+    transition: 400ms;
+}
+
+.settings-btn:hover {
+    color: black;
+    background-color: white;
+    transition: 300ms;
+}
+
+
+
+.icon-settings:before {
+    font-size: 32px;
+}
+
+
+.play-btn {
+    display: none;
+    top: 15px;
+    width: 250px;
+    height: 51px;
+    left: 50%;
+    border-radius: 10px;
+    border: currentColor;
+    background: #0000002a;
+    font: normal normal bold 20px/25px Poppins;
+    color: #ffffffe7;
+    margin: 15px 0;
+    box-shadow: 0 0 5px #F1F1F1;
+    transition: 300ms;
+}
+.play-btn:hover {
+    box-shadow: 0 0 10px #F1F1F1;
+    background-color: white;
+    color: #000000;
+    transition: 300ms;
+    top: -5px;
+}
+
+
+
+.download-content {
+    top: 15px;
+    width: 250px;
+    height: 51px;
+    border-radius: 0px;
+    border: currentColor;
+    background: #80808027;
+    font: normal normal bold 20px/25px Poppins;
+    color: #ffffffe7;
+    margin: 15px 0;
+    box-shadow: 0 0 0 1px #ffffff;
+}
+.download-content:hover {
+    box-shadow: 0 0 10px #F1F1F1;
+    transition: 400ms;
+    top: -2px;
+}
+
+.text-download,
+.progress-bar {
+    position: absolute;
+    top: 48%;
+    display: none;
+    box-shadow: 0 0 0 1px #00000000;
+}
+
+.text-download {
+    top: 35%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    color: #F1F1F1;
+    font: normal normal bold 15px/15px Poppins;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: transparent;
+    height: 6px;
+    width: 250px;
+
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #797979;
+    border-radius: 5px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #fffefe;
+    border-radius: 1px;
+}
+
+.etat-text {
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    width: 49px;
+    height: 33px;
+    background-color: #262626;
+    border-radius: 4px;
+    transition: background-color .2s;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: normal normal bold 13px/15px Poppins;
+    letter-spacing: 0px;
+    color: #E1E1E1;
+    transition: color .2s;
+}
+    
+
+.instances {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+    transition: 300ms;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+.cardContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.cardInstances {
+    visibility: visible;
+    margin: 10px;
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.cardInstances:hover {
+    filter: none; /* Remueve cualquier filtro en hover */
+    transition: transform ;
+
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.801);
+        transition: 100ms;
+    }
+
+    70% {
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+        transition: 100ms;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transition: 100ms;
+    }
+}
+/* Asegurar que la imagen ocupe el ancho y alto completos */
+.cardInstances img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 600ms;   
+}
+.cardInstances img:hover {
+    transform: translateZ(10px) rotateX(15deg) rotateY(15deg);
+    transition: 300ms; 
+    animation: pulse 1.3s infinite;
+}
+.cardInstances:hover ~ .cardInstances {
+    filter: grayscale(100%);
+    transition: 300ms;
+}
+
+.cardInstances:not(:hover) {
+    filter: grayscale(100%);
+    transition: 300ms;
+}
+
+
+.cardInstances:hover {
+    filter: none; 
+    transition: filter 300ms ease;
+}
+
+
+.noInstancesCard {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.noInstancesMessage {
+    padding: 20px;
+    align-items: self-start;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.noInstancesMessage h2 {
+    margin-top: 350px;
+    color: #dddddd;
+}
+
+.noInstancesMessage h3 {
+    color: #ffffff;
+    font: normal normal normal 16px/22px Poppins;
+    justify-content: start;
+}
+
+
+
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.salir-btn {
+    background-color: #00000000;
+    background-image: url("http://launcher.servehttp.com/Soul_Logo_180x.png");
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 5px;
+    top: -625px;
+    border: currentColor;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30%;
+    border-radius: 16px;
+    transition: 400ms;
+}
+.salir-btn:hover {
+    background-color: #00000000;
+    box-shadow: 0 0 10px #F1F1F1;
+    transition: 400ms;
+}
+
+.icons {
+    position: relative;
+    top: -282px;
+    list-style: none;  /* Elimina los puntos de lista */
+    display: flex;  /* Flexbox */
+    flex-direction: column;  /* Cambiar la dirección a columna */
+}
+
+.icons .icons img {
+    margin: 4px;
+    border-radius: 30%;
+    width: 50px;   /* La imagen toma todo el tamaño del contenedor */
+    height: 50px;  /* La imagen toma todo el tamaño del contenedor */
+    transition: 400ms;
+}
+.icons .icons img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0 0 10px #F1F1F1;
+    transition: 400ms;
+}
+.sidebar {
+    width: 60px;
+    height: 100%;
+    background-color: #17161D;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.player-head {
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 3px;
+    top: 20px;
+    background-color: #00000096;
+    transition: 0.2s;
+    background-image: url("../../images/default/person.png") !important;
+    border: currentColor;
+    transition: 0.2s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    box-shadow: 0 0 5px #F1F1F1;
+    transition: 400ms;
+}
+.player-head:hover{
+    background-color: white;
+    transition: 300ms;
+}
+
+.title {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 60px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.title-main {
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.title-highlight {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(to right, #f2994a, #f2c94c); /* Colores del degradado */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Simula el brillo oscuro del fondo */
+}

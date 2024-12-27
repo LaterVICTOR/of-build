@@ -1,0 +1,32 @@
+@import '../root.css';
+.tabs-cuenta-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: var(--tabs-height);
+  border-top-left-radius: var(--tabs-radius);
+  border-top-right-radius: var(--tabs-radius);
+  background: var(--primary-bg-color);
+  backdrop-filter: var(--blur-effect);
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-cuenta-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--content-width);
+  height: var(--content-height);
+  padding-bottom: 1.5rem;
+  border-radius: var(--content-radius);
+  background: var(--secondary-bg-color);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.active-cuenta-content {
+  opacity: 1;
+  pointer-events: all;
+}

@@ -1,0 +1,179 @@
+@import "font.css";
+@import "panels/login.css";
+@import "panels/home.css";
+@import "panels/settings.css";
+
+* {
+    outline: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: linear-gradient(#00000000, #00000000), #1C1C1C no-repeat center center scroll; /* Color de fondo azul */
+}
+
+img {   
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.dragbar {
+    position: fixed;
+    background: #00000000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 26px;
+    -webkit-app-region: drag;
+    z-index: 11;
+    display: none;
+}
+
+.frame {
+    background: transparent;
+    position: fixed;
+    display: table;
+    top: 0px;
+    right: 0px;
+    z-index: 11;
+    -webkit-app-region: no-drag;
+    display: none;
+}
+
+.hide {
+    display: block;
+}
+
+.button-frame {
+    position: relative;
+    display: table-cell;
+    width: 30px;
+    height: 26px;
+    transition: color .2s, background-color .2s;
+    color: white; /* Cambiado a blanco para contrastar */
+    cursor: pointer;
+}
+
+.icon-close:hover {
+    background: #e21212; /* Este color se puede cambiar a un tono azul si deseas */
+}
+
+.icon-minimize:hover,
+.icon-restore-down:hover,
+.icon-maximize:hover {
+    background-color: #595959; 
+}
+
+.icon-close:before,
+.icon-minimize:before,
+.icon-maximize:before,
+.icon-restore-down:before {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #f8f9f9;
+}
+
+.preload-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preload-progress {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 127px;
+}
+
+.dot {
+    position: absolute;
+    top: 80%;
+    left: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70.8px;
+    height: 70.8px;
+    color: #fcfcfc;
+    background: radial-gradient(11.2px,currentColor 94%,#0000);
+}
+
+.dot:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10%;
+    background: radial-gradient(20.8px at bottom right,#0000 94%,currentColor) top left,
+                radial-gradient(20.8px at bottom left ,#0000 94%,currentColor) top right,
+                radial-gradient(20.8px at top right,#0000 94%,currentColor) bottom left,
+                radial-gradient(20.8px at top left ,#0000 94%,currentColor) bottom right;
+    background-size: 40.4px 40.4px;
+    background-repeat: no-repeat;
+    animation: dot 1.5s infinite cubic-bezier(0.3,1,0,1);
+    box-shadow: 0 0 30px #3C3C3C; /* Sombra azul */
+}
+
+@keyframes dot {
+    33% {
+        inset: -11.2px;
+        transform: rotate(0deg);
+        box-shadow: 0 0 30px #595959 27.9%; /* Cambiado a azul */
+    }
+
+    66% {
+        inset: -11.2px;
+        transform: rotate(90deg);
+        box-shadow: 0 0 30px #ffffff; /* Se puede dejar blanco para contraste */
+    }
+
+    100% {
+        inset: 0;
+        transform: rotate(90deg);
+        box-shadow: 0 0 30px #333333; /* Sombra azul oscuro */
+    }
+}
+
+.preload-title {
+    font: normal normal bold 30px/40px Poppins;
+    color: #E1E1E1; /* Color gris claro */
+    text-align: center;
+    margin: 2em 0;
+}
+
+.panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.active {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: all;
+}
+
+.rotation {
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}

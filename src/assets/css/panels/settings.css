@@ -1,0 +1,552 @@
+.tab-btn-css {
+  border-radius: 5px;
+  width: 36%;
+  height: 50px;
+  margin: auto 30%;
+  font: normal normal bold 13px/20px Poppins;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 8px 30px;
+  background: #000000;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.tab-btn-css:hover {
+  box-shadow: 0 0 10px 0 #000000 inset, 0 0 10px 8px #ffffff;
+}
+
+.tabs-settings-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 80%;
+  padding-bottom: 1.5rem;
+  border-radius: 20px;
+  background: #00000091;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.active-tab-content {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.tabs-settings-content2 {
+  position: absolute;
+  top: 50%;
+  left: 180%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  padding-bottom: 1.5rem;
+  border-radius: 20px;
+  background: #000000af;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.active-tab-content2 {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.information {
+  padding: 0 40px;
+  font: normal normal normal 16px/25px Poppins;
+  color: #F1F1F1;
+}
+
+.title-settings {
+  text-align: center;
+  font: normal normal bold 34px Poppins;
+  color: #ffffff;
+  margin: 2% 0;
+}
+
+.mininfo-settings {
+  text-align: center;
+  font: normal normal  15px Poppins;
+  color: #ffffff;   
+  letter-spacing: 5px;
+  margin: 2% 0;
+}
+
+.launcher-settings {
+  text-align: center;
+  font: normal normal bold 25px Poppins;
+  color: #ffffff;
+  margin: 2% 0;
+}
+
+.informacion-settings {
+  text-align: center;
+  font: normal normal bold 18px Poppins;
+  color: #ffffff;
+  margin: 2% 0;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.settings-content-scroll {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.settings-content-scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.center-page {
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+}
+
+
+/*******************************************************************************
+*                                                                             *
+* account sttings                                                             *
+*                                                                             *
+******************************************************************************/
+
+.add-account {
+  width: 78%;
+  height: 9%;
+  border: none;
+  border-radius: 5px;
+  font: normal normal bold 30px/40px Poppins;
+  color: #000000;
+  background: rgb(233, 64, 255);
+  background: radial-gradient(circle, rgba(223,64,255) 0%, rgba(213,64,255) 100%);
+  box-shadow: 0 0 10px #ac0095;
+  margin: 20px 50px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.accounts {
+  display: contents;
+  justify-content: center;
+}
+
+.account {
+  display: inline-block;
+  border-radius: 100px;
+  text-align: start;
+  background: #00000041;
+  box-shadow: 0 0 5px #000000;
+  backdrop-filter: blur(30px);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: 4px solid transparent;
+  color: #F1F1F1;
+  font: normal normal bold 30px/40px Poppins;
+  width: 473px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: start;
+}
+
+.add-account2 {
+  width: 80%;
+  height: 10%;
+  border: none;
+  border-radius: 5px;
+  font: normal normal bold 30px/40px Poppins;
+  color: #000000;
+  background: rgb(233, 64, 255);
+  background: radial-gradient(circle, rgba(223,64,255) 0%, rgba(213,64,255) 100%);
+  box-shadow: 0 0 10px #ac0095;
+  margin: 20px 50px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.accounts2 {
+  display: contents;
+  justify-content: center;
+  display: none;
+}
+
+.account2 {
+  display: none;
+  display: inline-block;
+  border-radius: 100px;
+  text-align: start;
+  background: #00000041;
+  box-shadow: 0 0 5px #000000;
+  backdrop-filter: blur(30px);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: 4px solid transparent;
+  color: #F1F1F1;
+  font: normal normal bold 30px/40px Poppins;
+  width: 473px;
+  height: 100px;
+  margin: 1% 2%;
+  border-radius: 20px;
+  text-align: start;
+}
+
+.account:hover {
+  background: rgb(3, 23, 43);
+  box-shadow: 0 0 5px rgb(3, 23, 43);
+  border: 4px solid rgb(3, 23, 43);
+}
+
+.account-image {
+  position: absolute;
+  border-radius: 31px;
+  height: 70px;
+  top: 14x;
+  margin: 13px 20px;
+  pointer-events: none;
+}
+
+.account-name {
+  margin: 0 100px;
+  margin-top: 30px;
+  font: normal normal bold 24px/35px Poppins;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 29ch;
+  pointer-events: none;
+}
+
+.account-uuid {
+  margin: 0 100px;
+  font: normal normal normal 18px/27px Poppins;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  top: 96px;
+  overflow: hidden;
+  max-width: 29ch;
+  pointer-events: none;
+  display: none;
+}
+
+.account-delete {
+  margin: -48px 400px;
+  color: #f73434;
+  font-size: 50px;
+  background: #353535c7;
+  box-shadow: 0 0 5px #353535c7;
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon-account-delete-btn {
+  margin: 7px 9px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.active-account {
+  background: #00000041;
+  border: 4px solid rgb(2, 11, 20);
+  backdrop-filter: blur(30px);
+  transition: ease-in-out 0.2s;
+}
+
+.active-account:hover {
+  box-shadow: 0 0 10px #000000;
+  transform: scale(1.05);
+}
+
+
+/*******************************************************************************
+   *                                                                             *
+   * java settings                                                               *
+   *                                                                             *
+   ******************************************************************************/
+
+   .java-settings {
+      background: transparent;
+      border-radius: 20px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .memory-slider {
+      position: relative;
+      margin: 24px auto;
+      display: block;
+      height: 18px;
+      width: 450px;
+      user-select: none;
+    }
+    
+    .slider-touch-left,
+    .slider-touch-right {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        z-index: 2;
+        transition: transform .2s;
+    
+    }
+    .slider-touch-left:hover,
+    .slider-touch-right:hover {
+        transform: scale(1.2);
+    }
+    
+    .slider-touch-left span,
+    .slider-touch-right span {
+        display: block;
+        width: 20px;
+        height: 10px;
+        background: #F1F1F1;
+        border: 4px solid rgb(2, 11, 20);
+        transition: background-color .2s, border .2s;
+        border-radius: 18px;
+        cursor: pointer;
+    }
+    
+    .slider-touch-left span:after,
+    .slider-touch-right span:after {
+        content: attr(value);
+        color: rgb(2, 11, 20);
+        font: normal normal bold 12px/18px Poppins;
+        white-space: nowrap;
+        pointer-events: none;
+        position: absolute;
+        top: -20px;
+        left: 83%;
+        transform: translate(-50%);
+    }
+    
+    .slider-line {
+        box-sizing: border-box;
+        position: absolute;
+        width: calc(100% - 18px);
+        left: 9px;
+        top: 7px;
+        height: 4px;
+        border-radius: 4px;
+        background-color: #F0F0F0;
+        transition: background-color .2s;
+        z-index: 0;
+        overflow: hidden;
+    }
+    
+    .slider-line span {
+        display: block;
+        height: 100%;
+        width: 0%;
+        background: rgb(2, 11, 20);
+        background: radial-gradient(circle, rgb(5, 27, 48) 0%, rgb(3, 27, 51) 100%);
+        transition: background-color .2s;
+    }
+    
+    .ram-info {
+      display: center;
+      text-align: center;
+      align-items: center;
+      font: normal normal bold 15px/25px Poppins;
+      color: #F1F1F1F1;
+    }
+    
+    .path {
+      min-width: 50%;
+      font: normal normal normal 13px/20px Poppins;
+      border-radius: 18px;
+      padding: 8px 16px;
+      margin: 0 40px;
+      margin-top: 2%;
+      color: #F1F1F1F1;
+      background-color: #1f1f1f;
+      user-select: text;
+      transition: color .2s, background-color .2s;
+      border: none;
+      outline: none;
+    }
+    
+    .path-button {
+      font: normal normal bold 13px/20px Poppins;
+      border-radius: 18px;
+      padding: 8px 30px;
+      background-color: #313eee;
+      cursor: pointer;
+      margin-left: 20px;
+      transition: color .2s, background-color .2s;
+      border: none;
+      outline: none;
+    }
+    
+    .path-button:hover {
+      background-color: #1f1f1f;
+    }
+    
+    .path-button-reset {
+      font: normal normal bold 13px/20px Poppins;
+      border-radius: 18px;
+      padding: 8px 30px;
+      background-color: #313eee;
+      cursor: pointer;
+      margin-left: 20px;
+      transition: color .2s, background-color .2s;
+      border: none;
+      outline: none;
+    }
+    
+    .path-button-reset:hover {
+      background-color: #1f1f1f;
+    }
+    
+    .path-file {
+      display: none;
+      pointer-events: none;
+    }
+    
+    .args-settings {
+      min-width: 50%;
+      font: normal normal normal 13px/20px Poppins;
+      border-radius: 18px;
+      padding: 8px 16px;
+      margin: 0 40px;
+      margin-top: 2%;
+      color: #F1F1F1F1;
+      background-color: #1f1f1f;
+      user-select: text;
+      transition: color .2s, background-color .2s;
+      border: none;
+      outline: none;
+    }
+
+
+/*******************************************************************************
+   *                                                                             *
+   * launcher settings                                                           *
+   *                                                                             *
+   ******************************************************************************/
+   .checkbox-settings {
+      display: none;
+  }
+  
+  .checkbox-settings+label {
+      display: inline;
+      position: relative;
+      top: 2px;
+      margin-right: 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      transition: background-color .2s;
+      padding: 0px;
+      background-color: #FFFFFF;
+      cursor: pointer;
+  }
+  
+  .checkround {
+      position: absolute;
+      z-index: 2;
+      border-radius: 7px;
+      transition: all .2s;
+      background-color: #FFFFFF;
+  }
+  
+  .checkbox-settings:checked+label {
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      background-color: #ffffff;
+      border: 4px solid rgb(5, 12, 44);
+      transition: transform .2s;
+  }
+  .checkbox-settings:checked+label:hover {
+      transform: scale(1.1);
+  }
+  
+  .checkround {
+    border-radius: 3px;
+  }
+  
+  d {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: ABeeZee, sans-serif;
+  }
+  
+  .checkbox-settings+label {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  /*******************************************************************************
+     *                                                                             *
+     * Selector de Cuenta                                                          *
+     *                                                                             *
+     ******************************************************************************/
+
+
+
+     .tabs-cuenta
+     -btn {
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+         height: 60px;
+         border-top-left-radius: 40px;
+         border-top-right-radius: 40px;
+         background: #00000000;
+         backdrop-filter: blur(5px);
+         display: flex;
+         justify-content: center;
+       }
+     
+       .tabs-cuenta-content {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 40%;
+         height: 60%;
+         padding-bottom: 1.5rem;
+         border-radius: 20px;
+         background: #201f29af;
+         opacity: 0;
+         pointer-events: none;
+       }
+       
+       .active-cuenta-content {
+         opacity: 1;
+         pointer-events: all;
+       }
+     
+       .cuentas-guardar {
+         width: 200px;
+         border: 4px solid b25af1;
+         height: 50px;
+         margin: 33% 30%;
+         border-radius: 18px;
+         cursor: pointer;
+         transition: all 0.5s ease-in-out;
+         border-radius: 23px;
+         background: #1C1C1C;
+         font: normal normal bold 20px/25px Poppins;
+         cursor: pointer;
+         box-shadow: 0 0 5px #063335;
+         outline: none;
+       }
+       
+       .cuentas-guardar:hover {
+        background: #1C1C1C;
+        box-shadow: 0 0 5px #063335;
+        border: 4px solid #063335;       
+    }

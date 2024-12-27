@@ -34,7 +34,7 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
-      - name: Check out Git repositor
+      - name: Check out Git repository
         uses: actions/checkout@v1
 
       - name: Set up Node

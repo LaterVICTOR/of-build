@@ -1,7 +1,7 @@
 {
     "name": "SoulStudio",
     "preductname": "SoulStudio",
-    "version": "1.2.6",
+    "version": "1.2.8",
     "description": "SoulStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR and Drolet",
@@ -20,11 +20,9 @@
         "ext": "js,html,css"
     },
     "dependencies": {
-        "axios": "^1.7.7",
+        "axios": "^1.7.9",
         "discord-rpc": "^4.0.1",
         "electron-updater": "^6.1.8",
-        "fs": "^0.0.1-security",
-        "Jimp": "npm:jimp@^0.22.12",
         "minecraft-java-core": "^3.11.3",
         "node-bdd": "^2.0.4",
         "node-fetch": "^2.7.0",
@@ -41,6 +39,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LaterVICTOR/of-build.git"
+        "url": "git+https://github.com/u3784653u23847s/awd.git"
     }
 }

@@ -424,6 +424,7 @@
     width: 50px;   /* La imagen toma todo el tamaño del contenedor */
     height: 50px;  /* La imagen toma todo el tamaño del contenedor */
     transition: 400ms;
+    object-fit: cover;
 }
 .icons .icons img:hover {
     transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
@@ -433,7 +434,7 @@
 .sidebar {
     width: 60px;
     height: 100%;
-    background-color: #17161D;
+    background-color: #17161d80;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);

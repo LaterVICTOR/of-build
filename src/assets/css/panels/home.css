@@ -324,7 +324,6 @@
     transition: 600ms;   
 }
 .cardInstances img:hover {
-    transform: translateZ(10px) rotateX(15deg) rotateY(15deg);
     transition: 300ms; 
     animation: pulse 1.3s infinite;
 }

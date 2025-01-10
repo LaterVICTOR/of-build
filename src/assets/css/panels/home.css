@@ -487,3 +487,9 @@
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Simula el brillo oscuro del fondo */
 }
+
+.icons:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }

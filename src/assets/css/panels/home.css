@@ -114,18 +114,12 @@
     background: #ffffff00;
     display: flex;
 }
-.disabled-option {
-    color: #fcfcfc; /* Cambia el color de texto para opciones deshabilitadas */
-    background-color: #e2141ed3; /* Cambia el color de fondo para opciones deshabilitadas si es necesario */
-    border-radius: 5px;
-}
 
 .play-element {
     display: none;
     top: null;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    transform: translate(115%);
     height: 100%;
     color: #F1F1F1;
     font: normal normal bold 19px/29px Poppins;
@@ -135,7 +129,8 @@
 .settings-btn {
     visibility: none;
     position: absolute;
-    top: 15px;
+    top: 20.2px;
+    transform: translate(1600%);
     width: 54px;
     height: 51px;
     left: 94%;
@@ -163,16 +158,15 @@
 
 .play-btn {
     display: none;
-    top: 15px;
-    width: 250px;
+    width: 300px;
     height: 51px;
-    left: 50%;
+    background-color: rgba(23, 22, 29, 0.5); /* Color semitransparente */
+    backdrop-filter: blur(25px); /* Desenfoque del contenido detrás */
     border-radius: 10px;
     border: currentColor;
-    background: #0000002a;
     font: normal normal bold 20px/25px Poppins;
     color: #ffffffe7;
-    margin: 15px 0;
+    margin: -5px 0;
     box-shadow: 0 0 5px #F1F1F1;
     transition: 300ms;
 }
@@ -187,16 +181,18 @@
 
 
 .download-content {
-    top: 15px;
-    width: 250px;
+    display: none;
+    width: 300px;
     height: 51px;
-    border-radius: 0px;
+    left: 50%;
+    border-radius: 10px;
     border: currentColor;
-    background: #80808027;
+    background: #0000002a;
     font: normal normal bold 20px/25px Poppins;
     color: #ffffffe7;
-    margin: 15px 0;
-    box-shadow: 0 0 0 1px #ffffff;
+    margin: -5px 0;
+    box-shadow: 0 0 5px #F1F1F1;
+    transition: 300ms;
 }
 .download-content:hover {
     box-shadow: 0 0 10px #F1F1F1;
@@ -213,7 +209,7 @@
 }
 
 .text-download {
-    top: 35%;
+    top: 10%;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -432,9 +428,11 @@
     transition: 400ms;
 }
 .sidebar {
+    position: absolute;
     width: 60px;
     height: 100%;
-    background-color: #17161d80;
+    background-color: rgba(23, 22, 29, 0.5); /* Color semitransparente */
+    backdrop-filter: blur(15px); /* Desenfoque del contenido detrás */
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);

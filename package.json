@@ -1,11 +1,11 @@
 {
     "name": "SoulStudio",
     "preductname": "SoulStudio",
-    "version": "1.3.2",
+    "version": "1.3.4",
     "description": "SoulStudio",
     "main": "src/app.js",
     "author": "LaterVICTOR and Drolet",
-    "url": "http://launcher.servehttp.com/",
+    "url": "https://client.soulhost.es/",
     "engines": {
         "node": "^18.x.x"
     },

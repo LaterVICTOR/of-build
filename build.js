@@ -14,7 +14,7 @@ builder.build({
         asar: true,
         publish: [{
             provider: "generic",
-            url: "http://launcher.servehttp.com/app",
+            url: "https://client.soulhost.es/app",
             channel: "latest",
             publishAutoUpdate: true,
             useMultipleRangeRequest: true,

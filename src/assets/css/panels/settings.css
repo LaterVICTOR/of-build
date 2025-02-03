@@ -1,9 +1,8 @@
 .tab-btn-css {
   border-radius: 5px;
   width: 36%;
-  margin-top: -15%;
-  margin-left: 120px;
   height: 50px;
+  margin: auto 30%;
   font: normal normal bold 13px/20px Poppins;
   color: #ffffff;
   border-radius: 18px;
@@ -63,8 +62,9 @@
 
 .title-settings {
   text-align: center;
-  font: normal normal bold 25.13px Poppins;
+  font: normal normal bold 34px Poppins;
   color: #ffffff;
+  margin: 2% 0;
 }
 
 .mininfo-settings {
@@ -72,18 +72,21 @@
   font: normal normal  15px Poppins;
   color: #ffffff;   
   letter-spacing: 5px;
+  margin: 2% 0;
 }
 
 .launcher-settings {
   text-align: center;
-  font: normal normal bold 18.49px Poppins; /* 25px - 26.08% */
+  font: normal normal bold 25px Poppins;
   color: #ffffff;
+  margin: 2% 0;
 }
 
 .informacion-settings {
   text-align: center;
   font: normal normal bold 18px Poppins;
   color: #ffffff;
+  margin: 2% 0;
 }
 
 .center-align {
@@ -147,7 +150,7 @@
   border: 4px solid transparent;
   color: #F1F1F1;
   font: normal normal bold 30px/40px Poppins;
-  width: 385px;
+  width: 505px;
   height: 100px;
   border-radius: 20px;
   text-align: start;
@@ -233,7 +236,7 @@
 }
 
 .account-delete {
-  margin: -48px 312px;
+  margin: -48px 400px;
   color: #f73434;
   font-size: 50px;
   background: #353535c7;
@@ -282,11 +285,10 @@
       position: relative;
       margin: 24px auto;
       display: block;
-      height: 13.33px; /* 18px - 26.08% */
-      width: 332.64px; /* 450px - 26.08% */
+      height: 18px;
+      width: 450px;
       user-select: none;
     }
-    
     
     .slider-touch-left,
     .slider-touch-right {
@@ -356,7 +358,7 @@
       display: center;
       text-align: center;
       align-items: center;
-      font: normal normal bold 11.09px/18.48px  Poppins;
+      font: normal normal bold 15px/25px Poppins;
       color: #F1F1F1F1;
     }
     
@@ -531,7 +533,7 @@
          width: 200px;
          border: 4px solid b25af1;
          height: 50px;
-         margin: 30% 23%;
+         margin: 33% 30%;
          border-radius: 18px;
          cursor: pointer;
          transition: all 0.5s ease-in-out;

@@ -18,20 +18,20 @@
     --red-color: #FF0409; /* Color rojo */
   
     /* Sombras y efectos */
-    --box-shadow: 0px 0px 3.7px var(--text-shadow-color); /* Sombra */
-    --blur-effect: blur(3.7px); /* Efecto de desenfoque */
-    --card-blur: blur(29.6px); /* Efecto de desenfoque en la tarjeta */
-    --transition-duration: 443.52ms; /* Duración de las transiciones */
+    --box-shadow: 0px 0px 5px var(--text-shadow-color); /* Sombra */
+    --blur-effect: blur(5px); /* Efecto de desenfoque */
+    --card-blur: blur(40px); /* Efecto de desenfoque en la tarjeta */
+    --transition-duration: 600ms; /* Duración de las transiciones */
   
     /* Dimensiones */
-    --tabs-height: 51.86px; /* Altura de las pestañas */
-    --tabs-radius: 29.6px; /* Radio de las pestañas */
-    --content-radius: 14.8px; /* Radio del contenido */
-    --content-width: 29.6%; /* Ancho del contenido */
-    --content-height: 59.2%; /* Altura del contenido */
-    --card-width: 32.54px; /* Ancho de la tarjeta */
-    --card-height: 32.54px; /* Altura de la tarjeta */
-    --tooltip-width: 59.19px; /* Ancho del tooltip */
-    --tooltip-padding: 0.74px 0; /* Relleno del tooltip */
-    --container-left: 36.96px; /* Desplazamiento del contenedor a la izquierda */
+    --tabs-height: 70px; /* Altura de las pestañas */
+    --tabs-radius: 40px; /* Radio de las pestañas */
+    --content-radius: 20px; /* Radio del contenido */
+    --content-width: 40%; /* Ancho del contenido */
+    --content-height: 80%; /* Altura del contenido */
+    --card-width: 44px; /* Ancho de la tarjeta */
+    --card-height: 44px; /* Altura de la tarjeta */
+    --tooltip-width: 80px; /* Ancho del tooltip */
+    --tooltip-padding: 1px 0; /* Relleno del tooltip */
+    --container-left: 50px; /* Desplazamiento del contenedor a la izquierda */
 }
